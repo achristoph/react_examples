@@ -1,0 +1,134 @@
+:root {
+  --space: 1.5em;
+  --space-lg: 2em;
+  --bg-color: hsl(150, 45%, 50%);
+}
+body {
+    padding: 0;
+    margin: 0;
+}
+#app {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  min-height: 100vh;
+  flex: 1 0 auto;
+  flex-direction: column;
+  padding: 0 10px 0 10px;
+  background: linear-gradient(to bottom, #1e5799 0%,#207cca 32%,#207cca 32%,#2989d8 44%,#7db9e8 100%);
+}
+
+main {
+   display: flex;
+   flex: 1 0 auto;
+   margin: 0;
+   flex-direction: row;
+   background: white;
+   padding: 0 0 0 10px;
+   min-height: 100vh;
+}
+
+header {
+    flex:none;
+    background: white;
+    padding: 0 10px 10px 10px;
+    font-size: smaller;
+    font-weight: bold;
+}
+
+footer{
+    display: flex;
+    flex: 0 0 30px;
+    background: lightgray;
+    justify-content: center;
+}
+
+.content {
+    flex: 1;
+}
+
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border: 1px solid silver;
+}
+
+.product {
+    padding: 5px;
+    border: 1px solid black;
+    height: 120px;
+    width: 100px;
+    margin: 10px;
+    font-weight: bold;
+    font-size: xx-small;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+@media (max-width: 400px) {
+  .grid {
+    display: block;
+  }
+  .product {
+      width: 100%;
+      margin: 0 0 10px 0;
+    }
+}
+
+nav {
+    color: white;
+    background: black;
+    padding: 0;
+}
+
+nav ul {
+    padding: 0 0 0 10px;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;    
+    padding-right: 10px;    
+}
+
+nav a {
+    color: white;
+    text-decoration:none;
+}
+
+nav a:visited {
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: none;
+    background: grey;
+}
+
+aside {
+  flex: 0 0 auto;
+  background: rgba(147, 128, 108, 0.1);
+  padding: 10px 10px 0 10px;
+}
+
+aside ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+aside a {
+    color: cornflowerblue;
+    text-decoration:none;
+}
+
+aside a:visited {
+    text-decoration: none;
+}
+
+aside a:hover {
+    color: yellowgreen;
+    text-decoration: none;
+}
