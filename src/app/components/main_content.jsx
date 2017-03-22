@@ -14,7 +14,6 @@ function filterByCategory(category, data) {
 }
 
 const MainContent = (props) => {
-    if (!props.data) return null;
     if (props.data) {
         ArrayHelper();
         let i = 0;
